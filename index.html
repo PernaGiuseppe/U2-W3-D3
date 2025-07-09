@@ -4,23 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Books site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <style>
-      .hide {
-        display: none;
-      }
-    </style>
   </head>
-  <body>
+  <body class="bg-dark-subtle" style="font-family: Roboto, sans-serif">
     <header>
-      <h1 class="text-center">Epic Books</h1>
+      <h1 class="text-center my-3">Epic Books</h1>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light text-sm-center text-md-center"
+        class="navbar navbar-expand-lg bg-black text-sm-center text-md-center"
       >
         <div class="container">
           <button
@@ -38,25 +39,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home
-                  <span class="visually-hidden-focusable">(current)</span></a
+                <a class="nav-link text-light" href="#"
+                  >Home <span class="visually-hidden-focusable"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#week-deal">Azione</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#welcome-summer"
+                  >Fantascienza</a
                 >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#week-deal">Paesaggi</a>
+                <a class="nav-link text-light" href="#last-minute">Giallo</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#welcome-summer">Città</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#last-minute">Mare</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Help</a>
+                <a class="nav-link text-light" href="#testimonials"
+                  >Romantici</a
+                >
               </li>
             </ul>
             <form class="d-flex my-2 my-lg-0" role="search">
@@ -66,7 +70,7 @@
                 placeholder="Cerca nel sito"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">
                 Cerca
               </button>
             </form>
@@ -77,17 +81,7 @@
 
     <main>
       <div class="container my-5">
-        <div class="row" id="card-section">
-          <!-- <div class="col col-sm-6 col-md-4 col-lg-3">
-            <div class="card shadow-lg border-0">
-              <img src="..." class="card-img-top" alt="Città" />
-              <div class="card-body">
-                <h5 class="card-title">Grattacieli</h5>
-                <a href="#" class="btn btn-epic3">Vedi foto</a>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div class="row" id="card-section"></div>
       </div>
     </main>
     <script
